@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    background-color: #151515;
 }
 
 .header {
@@ -29,7 +29,7 @@ body {
 }
 
 .logo {
-    color: #000;
+    color: #FF3B5C;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -50,6 +50,10 @@ body {
     font-size: 16px;
 }
 
+.developer-list {
+    margin-top: 15px;
+}
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -58,7 +62,7 @@ body {
 }
 
 .text-content {
-    color: #000;
+    color: #fff;
     font-size: 15px;
     font-weight: 700;
 }
@@ -80,7 +84,7 @@ body {
 }
 
 .text-team {
-    color: #000;
+    color: #fff;
     font-size: 15px;
     font-weight: 700;
     margin: 15px 0;
@@ -92,7 +96,7 @@ body {
 }
 
 .text-artist {
-    color: #000;
+    color: #fff;
     font-size: 15px;
     font-weight: 700;
     margin: 15px 0;
@@ -107,15 +111,16 @@ body {
     width: 100%;
     height: 69px;
     border-radius: 10px;
-    background: #FFF;
-    border: #bebebe 1px solid;
-    /* box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25); */
+    color: #fff;
+    background: #202020;
+    border: #404040 1px solid;
     margin-bottom: 8px;
     padding: 0 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .active {
@@ -133,7 +138,7 @@ body {
     font-size: 15px;
     margin-right: 15px;
     margin-left: 10px;
-    border: #bebebe 1px solid;
+    border: #404040 1px solid;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -146,7 +151,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: #bebebe 2px solid;
+    border: #303030 3px solid;
     margin-right: 20px;
 }
 
@@ -177,151 +182,19 @@ body {
 }
 
 .footer {
+    border-top: #FF3B5C 1px solid;
+    margin-top: 15px;
     padding: 30px 0;
 }
 
 .copyright {
-    color: #000;
+    color: #FF3B5C;
     font-size: 12px;
 }
 
 @media (max-width: 880px) {
     .container {
         max-width: 880px;
-        padding: 0 7px;
-    }
-    
-    .nav-wrapper {
-        border-bottom: #FF3B5C 1px solid;
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        color: #000;
-        font-size: 15px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    .lang-btn__wrapper {
-        display: flex;
-        gap: 7px;
-    }
-
-    .russian-lang__btn {
-        color: #FF3B5C;
-        font-size: 16px;
-    }
-
-    .english-lang__btn {
-        color: #777;
-        font-size: 16px;
-    }
-    
-    .content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 15px;
-    }
-
-    .text-content {
-        color: #000;
-        font-size: 12px;
-        font-weight: 700;
-    }
-
-    .text-team {
-        color: #000;
-        font-size: 12px;
-        font-weight: 700;
-        margin: 15px 0;
-    }
-
-    .content-wrapper {
-        display: flex;
-        gap: 20px;
-    }
-
-    .update-list__btn {
-        color: #FF3B5C;
-        font-size: 12px;
-    }
-
-    .list-girls {
-        margin-top: 15px;
-        height: 385px;
-        overflow-y: auto;
-    }
-    .list-team {
-        height: 154px;
-        overflow-y: auto;
-    }
-
-    .list-box {
-        width: 100%;
-        height: 69px;
-        border-radius: 10px;
-        background: #FFF;
-        border: #bebebe 1px solid;
-        /* box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25); */
-        margin-bottom: 8px;
-        padding: 0 7px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .item-wrapper {
-        display: flex;
-        align-items: center;
-    }
-
-    .avatar {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-
-    .username {
-        font-size: 15px;
-        font-weight: 700;
-    }
-
-    .name {
-        font-size: 12px;
-        color: #777;
-        font-weight: 700;
-    }
-
-    .boys {
-        font-size: 12px;
-        color: #777;
-        font-weight: 700;
-    }
-
-    .icon-wrapper {
-        display: flex;
-    }
-
-    .icon {
-        display: flex;
-        margin-left: 10px;
-    }
-
-    .footer {
-        margin-top: 20px;
-        padding: 20px 0;
-        border-top: #bebebe 1px solid;
-    }
-
-    .copyright {
-        color: #000;
-        font-size: 12px;
-        text-align: center;
+        padding: 0 12px;
     }
 }
