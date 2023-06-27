@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #151515;
+    background-color: #fff;
 }
 
 .header {
@@ -62,8 +62,8 @@ body {
 }
 
 .text-content {
-    color: #fff;
-    font-size: 15px;
+    color: #000;
+    font-size: 13px;
     font-weight: 700;
 }
 
@@ -74,7 +74,7 @@ body {
 
 .update-list__btn {
     color: #FF3B5C;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .list-girls {
@@ -84,8 +84,8 @@ body {
 }
 
 .text-team {
-    color: #fff;
-    font-size: 15px;
+    color: #000;
+    font-size: 13px;
     font-weight: 700;
     margin: 15px 0;
 }
@@ -96,8 +96,8 @@ body {
 }
 
 .text-artist {
-    color: #fff;
-    font-size: 15px;
+    color: #000;
+    font-size: 13px;
     font-weight: 700;
     margin: 15px 0;
 }
@@ -111,16 +111,15 @@ body {
     width: 100%;
     height: 69px;
     border-radius: 10px;
-    color: #fff;
-    background: #202020;
-    border: #404040 1px solid;
+    color: #000;
+    background: #fff;
+    border: #bebebe 1px solid;
     margin-bottom: 8px;
     padding: 0 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 0.2s ease;
-    cursor: pointer;
 }
 
 .active {
@@ -138,7 +137,7 @@ body {
     font-size: 15px;
     margin-right: 15px;
     margin-left: 10px;
-    border: #404040 1px solid;
+    border: #bebebe 1px solid;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -148,15 +147,15 @@ body {
 }
 
 .avatar {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    border: #303030 3px solid;
-    margin-right: 20px;
+    border: #bebebe 3px solid;
+    margin-right: 10px;
 }
 
 .username {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
 }
 
@@ -178,7 +177,8 @@ body {
 
 .icon {
     display: flex;
-    margin-left: 10px;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 .footer {
@@ -192,9 +192,20 @@ body {
     font-size: 12px;
 }
 
+.copyright a {
+    color: #777;
+}
+
 @media (max-width: 880px) {
     .container {
         max-width: 880px;
         padding: 0 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .icon img {
+        width: 35px;
+        height: 35px;
     }
 }
