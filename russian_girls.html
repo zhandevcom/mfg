@@ -24,9 +24,12 @@
 					<a href="#" class="english-lang__btn">en</a>
 				</div>
 			</div>
-			<!-- groups -->
+			<!-- info -->
 			<div class="content">
 				<h2 class="text-content">ВИДЕО</h2>
+				<span class="update-list__btn">
+					дата: <span id="date" class="update-list__btn"></span>
+				</span>
 			</div>
 			<div class="video__content">
 				<iframe class="video_cover" src="https://www.youtube.com/embed/Od5eCT72uoI?si=tYzBo9fJYuCpmkl2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -245,8 +248,14 @@
 			</p>
 		</div>
 	</div>
-	<script src="script.js"></script>
+	<script>
+		// Получаем текущую дату
+		const today = new Date();
+		const formattedDate = today.toLocaleDateString("ru-RU"); // формат дд.мм.гггг
+		document.getElementById("date").textContent = formattedDate;
+	</script>
 </body>
 
 </html>
+
 
