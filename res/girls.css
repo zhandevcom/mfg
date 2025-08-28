@@ -81,7 +81,7 @@ body {
     margin-bottom: 10px;
     box-shadow: #000;
     border-radius: 20px;
-    box-shadow: 0px 0px 15px 0px #FF3B5C;
+    box-shadow: 0px 0px 8px 0px #FF3B5C;
 }
 
 .header__presave_name {
@@ -252,4 +252,5 @@ body {
     }
     
 }
+
 
