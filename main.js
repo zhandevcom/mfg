@@ -9,6 +9,16 @@
     const currencySelect = document.getElementById('currency');
     const resultDiv = document.getElementById('result');
 
+    function appendNumber(num) {
+      amountInput.value += num;
+      convert();
+    }
+
+    function clearInput() {
+      amountInput.value = amountInput.value.slice(0, -1000000);
+      convert();
+    }
+
     function convert() {
       const amountKZT = parseFloat(amountInput.value);
       const selectedCurrency = currencySelect.value;
@@ -23,9 +33,4 @@
       resultDiv.textContent = `${result.toFixed(2)} ${selectedCurrency}`;
     }
 
-    // Автоматический пересчёт
-    amountInput.addEventListener('input', convert);
     currencySelect.addEventListener('change', convert);
-
-    // Рассчёт при загрузке
-    convert();
