@@ -189,6 +189,20 @@ body {
     width: 30px;
 }
 
+.form__inner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+#currency {
+    margin-top: 10px;
+}
+
+.form__result {
+    text-align: center;
+}
+
 .smav_inner {
     display: flex;
     justify-content: center;
