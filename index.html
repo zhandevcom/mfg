@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="shortcut icon" href="img/fav_mfg.svg" type="image/x-icon">
 
 	<link rel="stylesheet" href="style.css">
@@ -272,19 +272,26 @@
 					<option value="USD">USD</option>
 				</select>
 				<div id="buttons">
-					<button onclick="appendNumber('1')">1</button>
-					<button onclick="appendNumber('2')">2</button>
-					<button onclick="appendNumber('3')">3</button>
-					<button onclick="appendNumber('4')">4</button>
-					<button onclick="appendNumber('5')">5</button>
-					<button onclick="appendNumber('6')">6</button>
-					<button onclick="appendNumber('7')">7</button>
-					<button onclick="appendNumber('8')">8</button>
-					<button onclick="appendNumber('9')">9</button>
-					<button onclick="appendNumber('0')">0</button>
-					<button onclick="clearInput()">←</button>
+					<button onclick="clearInput()">СТЕРЕТЬ</button>
+					<div class="buttons__top">
+						<button onclick="appendNumber('1')">1</button>
+						<button onclick="appendNumber('2')">2</button>
+						<button onclick="appendNumber('3')">3</button>
+						<button onclick="appendNumber('4')">4</button>
+					</div>
+					<div class="buttons__middle">
+
+						<button onclick="appendNumber('5')">5</button>
+						<button onclick="appendNumber('6')">6</button>
+						<button onclick="appendNumber('7')">7</button>
+						<button onclick="appendNumber('8')">8</button>
+					</div>
+					<div class="buttons__bottom">
+						<button onclick="appendNumber('9')">9</button>
+						<button onclick="appendNumber('0')">0</button>
+					</div>
 				</div>
-				<span class="form__result" id="result"></span>
+				<span class="form__result" id="result">0.00</span>
 			</div>
 		</div>
 	</div>
