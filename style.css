@@ -193,15 +193,50 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    border-bottom: #FF3B5C 1px solid;
+}
+
+#amount {
+    height: 50px;
+    border: 1px solid #FF3B5C;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: #FF3B5C;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
 }
 
 #currency {
     margin-top: 10px;
+    height: 50px;
+    border: 1px solid #FF3B5C;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: #777;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
 }
 
-#buttons {
+.buttons__top {
     display: flex;
     gap: 10px;
+    width: 100%;
+}
+
+.buttons__middle {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.buttons__bottom {
+    display: flex;
+    gap: 10px;
+    width: 100%;
 }
 
 button {
@@ -210,7 +245,7 @@ button {
     height: 45px;
     border: none;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     color: #fff;
     background-color: #FF3B5C;
@@ -223,7 +258,7 @@ button:active {
 
 .form__result {
     text-align: center;
-    margin-top: 10px;
+    margin: 15px 0;
 }
 
 .smav_inner {
