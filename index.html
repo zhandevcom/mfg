@@ -57,7 +57,7 @@
 						<img src="https://i.scdn.co/image/ab67616d00001e026f8c557438166423240df9e5" alt="" class="header__presave_cover">
 					</a>
 					<h4 class="header__presave_name">Growing Pain...</h4>
-					<h4 class="header__presave_artist">young posse</h4>
+					<h3 class="header__presave_artist">young posse</h3>
 					<p class="header__presave_date">14 августа 2025 г.</p>
 				</div>
 			</div>
@@ -254,16 +254,35 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<section class="smav">
-			<div class="smav_inner">
-				<a href="https://t.me/ZhandevBot" class="smav__btn" target="_blank">
-					<img src="image/telegram.svg" alt="">
-					HiFiVPN
-				</a>
+		</header>
+	</div>
+	<div class="form">
+		<div class="container">
+			<!-- info -->
+			<div class="content">
+				<h2 class="text-content">
+					КОНВЕРТЕР ВАЛЮТ (BETA)
+				</h2>
 			</div>
-		</section>
-	</header>
+			<div class="form__inner">
+				<input type="number" id="amount" placeholder="KZT">
+				<select id="currency">
+					<option value="RUB">RUB</option>
+					<option value="UZS">UZS</option>
+					<option value="USD">USD</option>
+				</select>
+				<span class="form__result" id="result"></span>
+			</div>
+		</div>
+	</div>
+	<section class="smav">
+		<div class="smav_inner">
+			<a href="https://t.me/ZhandevBot" class="smav__btn" target="_blank">
+				<img src="image/telegram.svg" alt="">
+				HiFiVPN
+			</a>
+		</div>
+	</section>
 	<div class="container">
 		<div class="footer">
 			<p class="copyright">
@@ -271,7 +290,8 @@
 			</p>
 		</div>
 	</div>
-	<script>
+	<script src="main.js"></script>
+	<script url>
 		const today = new Date();
 		const formattedDate = today.toLocaleDateString("ru-RU");
 		document.getElementById("date").textContent = formattedDate;
